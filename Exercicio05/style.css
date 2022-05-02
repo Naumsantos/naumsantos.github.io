@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  padding: 10px;
+}
+
+header {
+  background-color: burlywood;
+}
+
+main {
+  background-color: bisque;
+  height: 100vh;
+}
+
+main p {
+  margin: 0;
+}
+
+section {
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+
+  background-color: cadetblue;
+  color: #fff;
+}
