@@ -6,7 +6,8 @@
 
 .header,
 nav,
-.banner {
+.banner, 
+.sec2 {
   padding: 0 150px;
 }
 
@@ -107,7 +108,6 @@ nav .search img {
 }
 
 .banner p {
-  font-weight: lighter;
   font-size: 15px;
   letter-spacing: .1em;
 }
@@ -122,3 +122,66 @@ nav .search img {
   position: relative;
   margin-bottom: 15px;
 }
+
+/* Section 2 */
+
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 450px;
+}
+
+.sec2 h2, h3, p {
+  text-align: center;
+  font-weight: normal;
+  color: #999999;
+}
+
+.sec2 h2, h3 {
+  color: #848190;
+}
+
+.sec2 .text h2 {
+  line-height: 55px;
+  font-size: 30px;
+}
+
+.sec2 .text p {
+  font-size: 15px;
+}
+
+.sec2 .subsection {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.sec2 .subsection h3 {
+  line-height: 35px;
+}
+
+.sec2 .subsection div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin: 30px;
+}
+
+.sec2 .subsection .subsec2 {
+  padding-top: 60px;
+}
+
+.sec2 .arrow {
+  width: 0; 
+  height: 0; 
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #999999;
+  margin: -30px;
+} 
