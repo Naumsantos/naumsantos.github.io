@@ -1,10 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;  
+  font-family: 'Roboto', sans-serif;
 }
 
-.header, nav, .banner {
+.header,
+nav,
+.banner {
   padding: 0 150px;
 }
 
@@ -34,8 +36,9 @@ nav {
   border-bottom: solid 5px #e1f5f6;
 }
 
-nav .menu, nav .search {
-  display: flex;  
+nav .menu,
+nav .search {
+  display: flex;
 }
 
 
@@ -70,18 +73,52 @@ nav .search img {
 
 /* Banner */
 
-.banner {
+.sec1 {
   background: url(/images/banner/background.png) no-repeat;
+  background-size: 100% 500px;
   background-color: black;
   height: 450px;
-  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner {
+  margin-top: 170px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   color: #fff;
+
+  width: 70em;
+
+  text-align: center;
 }
 
-.banner  p {
-  height: 665px;
+.banner .text {
+  width: 665px;
+}
+
+.banner h1 {
+  font-size: 40px;
+}
+
+.banner p {
+  font-weight: lighter;
+  font-size: 15px;
+  letter-spacing: .1em;
+}
+
+.banner .arrow_l a,
+.arrow_r a {
+  font-size: 80px;
+  font-weight: lighter;
+}
+
+.sec1 img {
+  position: relative;
+  margin-bottom: 15px;
 }
