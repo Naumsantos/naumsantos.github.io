@@ -9,11 +9,13 @@ nav,
 .banner, 
 .sec2,
 .sec3,
-.logos {
+.logos,
+footer,
+.all_right {
   padding: 0 150px;
 }
 
-.header {
+.header, .all_right {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +23,7 @@ nav,
   height: 48px;
 }
 
-.header .social img {
+.header .social img, .all_right .social img {
   margin: 8px;
 }
 
@@ -238,3 +240,43 @@ nav .search img {
   align-items: center;
 }
 
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+
+  color: #fff;
+  background-color: #3c3c3c;
+  font-size: 14px;
+}
+
+footer section {
+  width: 209px;
+  padding: 40px;
+}
+
+footer section h2 {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 1em;
+}
+
+footer section p {
+  font-size: 14px;
+}
+
+footer .post .text {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #252525;
+}
+
+footer .tags span {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#all_right {
+  color: #fff;
+}
