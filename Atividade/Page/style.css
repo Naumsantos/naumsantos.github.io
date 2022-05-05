@@ -246,7 +246,7 @@ footer {
   display: flex;
   justify-content: space-between;
 
-  color: #fff;
+  color: #bfbdbd;
   background-color: #3c3c3c;
   font-size: 14px;
 }
@@ -272,11 +272,25 @@ footer .post .text {
   border-bottom: solid 1px #252525;
 }
 
+footer .post aside {
+  color: #999999;
+}
+
 footer .tags span {
   font-weight: 400;
   font-size: 20px;
 }
 
+footer .post aside, footer .contact aside {
+  margin-top: 20px;
+  display: flex;
+}
+
+footer .icon {
+  width: 16px;
+  margin-right: 15px;
+}
+
 #all_right {
-  color: #fff;
+  color: #bfbdbd;
 }
