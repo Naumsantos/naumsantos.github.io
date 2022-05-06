@@ -79,7 +79,7 @@ nav .search img {
 /* Banner */
 
 .sec1 {
-  background: url(/images/banner/background.png) no-repeat;
+  background: url(images/banner/background.png) no-repeat;
   background-size: 100% 500px;
   background-color: black;
   height: 450px;
