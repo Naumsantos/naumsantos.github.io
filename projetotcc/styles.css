@@ -33,8 +33,13 @@ h2 {
   align-items: center;
   height: 635px;
 
+<<<<<<< HEAD
+  padding: 64px 100px;
+
+=======
   padding: 64px 112px;
 
+>>>>>>> 695c9141b508bae4274772b53b0e8461057ae25a
   background: #FFFFFF;
 
   position: relative;
