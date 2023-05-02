@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: 'Moon Dance', sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  margin-bottom: 24px;
+}
+
+#secao01,
+#secao02,
+#secao03,
+#secao04,
+#secao05 {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+#secao01 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 635px;
+
+  background: #FFFFFF;
+
+  position: relative;
+}
+
+#secao01 .text-01 {
+  width: 531px;
+}
+
+#secao01 h1 {
+  font-family: 'Moon Dance', sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 86px;
+
+  color: #000000;
+
+  margin-bottom: 24px;
+}
+
+#secao01 p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.button {
+  background: #141414;
+  border-radius: 4px;
+  padding: 16px 24px;
+
+  width: 180px;
+  height: 56px;
+
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  text-decoration: none;
+}
+
+#secao01 img {
+  width: 429px;
+  height: 489px;
+
+  border-radius: 32px;
+}
+
+#secao02 {
+  padding: 64px 112px;
+  height: 40%;
+
+  background: #321472;
+  color: #DEC12B;
+
+  overflow-wrap: break-word;
+}
+
+#secao02 p,
+ul {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+#secao02 p {
+  margin-bottom: 20px;
+}
+
+#secao02 ul,
+#secao03 ol {
+  padding-left: 18px;
+}
+
+#secao03 {
+  padding: 64px 112px;
+  height: 45%;
+
+  background: #fff;
+  color: #000;
+}
+
+#secao04 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 64px;
+
+  width: 1280px;
+
+  background-color: #DEC12B;
+}
+
+#secao05 {
+  padding: 64px 112px;
+
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: relative;
+
+  background: #FFFFFF;
+}
+
+#secao05 form {
+  display: inherit;
+  flex-direction: column;
+}
+
+#secao05 form label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#secao05 form input {
+  margin: 8px 0 24px;
+
+  width: 500px;
+  height: 48px;
+
+  border: 1px solid rgb(172, 166, 166);
+  border-radius: 8px;
+  color: #DEC12B;
+
+  padding: 8px 16px;
+}
+
+#secao05 form .button {
+  margin: 48px 0 120px;
+}
+
+.font {
+  position: absolute;
+}
+
+.font,
+.font a {
+  font-weight: 400;
+  font-size: 12px;
+
+  bottom: 12px;
+
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  background-color: #ccc;
+}
