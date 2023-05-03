@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-h2 {
+.subtitle {
   font-family: 'Moon Dance', sans-serif;
   font-weight: 400;
   font-size: 56px;
@@ -234,12 +234,11 @@ body {
     height: 156px;
   }
 
-  h2 {
+  .subtitle {
     font-weight: 400;
     font-size: 46px;
     margin-bottom: 34px;
     line-height: 36px;
-
   }
 
   #secao01,
