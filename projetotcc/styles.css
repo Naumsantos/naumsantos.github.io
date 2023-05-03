@@ -48,7 +48,7 @@ h2 {
   width: 531px;
 }
 
-#secao01 h1 {
+#secao01 .title {
   font-family: 'Moon Dance', sans-serif;
   font-weight: 400;
   font-size: 64px;
@@ -174,7 +174,7 @@ ul {
 
   border: 1px solid rgb(172, 166, 166);
   border-radius: 8px;
-  color: #DEC12B;
+  color: #000;
 
   padding: 8px 16px;
 }
@@ -217,20 +217,27 @@ body {
 
   #secao01 img {
     margin-top: 60px;
-    width: 329px;
-    height: 389px;
-
     border-radius: 26px;
   }
 
   #secao01 .text-01 {
+    width: 100%;
     height: 100%;
+  }
+
+  #secao01 .title {
+    line-height: 67px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 156px;
   }
 
   h2 {
     font-weight: 400;
     font-size: 46px;
-    margin-bottom: 24px;
+    margin-bottom: 34px;
     line-height: 36px;
 
   }
@@ -240,20 +247,17 @@ body {
   #secao03,
   #secao04,
   #secao05 {
-    padding: 64px 100px;
-  }
-}
-
-@media (max-width: 900px) {
-  iframe {
-    width: 90%;
-    height: 450px;
+    padding: 64px 50px;
   }
 
   #secao05 form input {
-    margin: 8px 0 24px;
+    width: 318px;
+  }
+}
 
-    width: 31.25em;
-    height: 3em;
+@media (max-width: 500px) {
+  #secao01 img {
+    width: 100%;
+    height: 90%;
   }
 }
