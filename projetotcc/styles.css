@@ -18,13 +18,17 @@ h2 {
   margin-bottom: 24px;
 }
 
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 #secao01,
 #secao02,
 #secao03,
 #secao04,
 #secao05 {
-  max-width: 70%;
-  margin: 0 auto;
+  padding: 64px 112px;
 }
 
 #secao01 {
@@ -33,7 +37,7 @@ h2 {
   align-items: center;
   height: 635px;
 
-  padding: 64px 100px;
+  padding: 64px 30px;
 
   background: #FFFFFF;
 
@@ -57,7 +61,7 @@ h2 {
 
 #secao01 p {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28px;
   color: #000000;
   margin-bottom: 40px;
@@ -88,7 +92,10 @@ h2 {
 }
 
 #secao02 {
-  padding: 64px 112px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
   height: 40%;
 
   background: #321472;
@@ -114,7 +121,10 @@ ul {
 }
 
 #secao03 {
-  padding: 64px 112px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
   height: 45%;
 
   background: #fff;
@@ -129,14 +139,10 @@ ul {
 
   padding: 64px;
 
-  width: 1280px;
-
   background-color: #DEC12B;
 }
 
 #secao05 {
-  padding: 64px 112px;
-
   height: 50%;
 
   display: flex;
@@ -192,6 +198,62 @@ ul {
   color: #000;
 }
 
-.container {
+body {
   background-color: #ccc;
+}
+
+@media (max-width: 1500px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  #secao01 {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #secao01 img {
+    margin-top: 60px;
+    width: 329px;
+    height: 389px;
+
+    border-radius: 26px;
+  }
+
+  #secao01 .text-01 {
+    height: 100%;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 46px;
+    margin-bottom: 24px;
+    line-height: 36px;
+
+  }
+
+  #secao01,
+  #secao02,
+  #secao03,
+  #secao04,
+  #secao05 {
+    padding: 64px 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  iframe {
+    width: 90%;
+    height: 450px;
+  }
+
+  #secao05 form input {
+    margin: 8px 0 24px;
+
+    width: 31.25em;
+    height: 3em;
+  }
 }
