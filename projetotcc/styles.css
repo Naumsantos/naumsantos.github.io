@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Times New Roman', sans-serif;
 }
 
 html {
@@ -12,7 +12,6 @@ html {
 }
 
 .subtitle {
-  font-family: 'Moon Dance', sans-serif;
   font-weight: 400;
   font-size: 56px;
   margin-bottom: 24px;
@@ -49,7 +48,6 @@ html {
 }
 
 #secao01 .title {
-  font-family: 'Moon Dance', sans-serif;
   font-weight: 400;
   font-size: 64px;
   line-height: 86px;
