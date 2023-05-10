@@ -27,12 +27,18 @@ li {
   margin: 0 auto;
 }
 
-#secao01,
+#secao01 {
+  padding: 64px 112px;
+}
+
+#secao04  {
+  padding: 124px 112px;
+}
+
 #secao02,
 #secao03,
-#secao04,
 #secao05 {
-  padding: 64px 112px;
+  padding: 200px 112px;
 }
 
 #secao01 {
@@ -106,8 +112,6 @@ li {
 
 #secao02 p,
 ul {
-  /* font-weight: 400; */
-  /* font-size: 1em; */
   line-height: 140%;
 }
 
@@ -241,7 +245,6 @@ iframe {
     font-weight: 400;
     font-size: 46px;
     margin-bottom: 34px;
-    line-height: 36px;
   }
 
   #secao01,
