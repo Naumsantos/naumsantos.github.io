@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 html {
@@ -22,7 +22,7 @@ li {
 
 .subtitle {
   font-weight: 400;
-  font-size: 3em;
+  font-size: 48px;
   margin-bottom: 24px;
 }
 
@@ -62,7 +62,7 @@ li {
 
 #secao01 .title {
   font-weight: 400;
-  font-size: 4em;
+  font-size: 64px;
   line-height: 74px;
 
   color: #000000;
@@ -183,11 +183,13 @@ ul {
   border: 1px solid rgb(172, 166, 166);
   border-radius: 8px;
   color: #000;
+  font-size: 14px;
 
   padding: 8px 16px;
 }
 
 #secao05 form .button {
+  font-size: 16px;
   margin: 48px 0 120px;
 }
 
