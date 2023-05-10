@@ -74,6 +74,7 @@
     <section id="secao04">
       <h2 class="subtitle">Um pouco mais sobre interfaces para autismo</h2>
       <iframe width="623" height="336" src="https://www.youtube.com/embed/xQ36uRX51sw"
+        alt="Vídeo que fala a respeito de acessibilidade digital para autismo, chamado Quebrando o ciclo da invisibilidade."
         title="Quebrando o ciclo da invisibilidade | Design para o Autismo 2020"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
@@ -83,9 +84,9 @@
       <h2 class="subtitle">Para saber mais entre em contato com a gente</h2>
       <form action="#">
         <label for="name">Nome completo</label>
-        <input id="name" type="text" placeholder="Escreva seu nome aqui" title="Escreva seu nome aqui">
-        <label for="email">Email</label>
-        <input id="email" type="text" placeholder="Escreva seu email aqui" title="Escreva seu email aqui">
+        <input required id="name" type="text" placeholder="Escreva seu nome aqui" title="Escreva seu nome aqui">
+        <label for="email">E-mail</label>
+        <input required aria-invalid="false" id="email" type="email" placeholder="Escreva seu email aqui" title="Escreva seu e-mail aqui">
         <a class="button" href="#">Enviar</a>
       </form>
       <p class="font">Fonte: <a href="https://autismoerealidade.org.br/o-que-e-o-autismo/">Autismo e Realidade</a>
