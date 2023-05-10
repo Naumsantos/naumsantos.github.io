@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f9f9f9;
+}
+
 li {
   margin: 5px 0;
 }
@@ -204,10 +208,6 @@ ul {
 
 footer {
   padding: 8px;
-}
-
-body {
-  background-color: #ccc;
 }
 
 iframe {
