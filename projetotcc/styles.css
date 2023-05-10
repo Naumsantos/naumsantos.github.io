@@ -5,10 +5,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+li {
+  margin: 5px 0;
 }
 
 .subtitle {
@@ -39,8 +44,6 @@ html {
   padding: 64px 30px;
 
   background: #FFFFFF;
-
-  position: relative;
 }
 
 #secao01 .text-01 {
@@ -50,7 +53,7 @@ html {
 #secao01 .title {
   font-weight: 400;
   font-size: 4em;
-  line-height: 86px;
+  line-height: 74px;
 
   color: #000000;
 
@@ -59,7 +62,6 @@ html {
 
 #secao01 p {
   font-weight: 400;
-  font-size: 18px;
   line-height: 28px;
   color: #000000;
   margin-bottom: 40px;
@@ -104,8 +106,8 @@ html {
 
 #secao02 p,
 ul {
-  font-weight: 400;
-  font-size: 1em;
+  /* font-weight: 400; */
+  /* font-size: 1em; */
   line-height: 140%;
 }
 
@@ -196,8 +198,16 @@ ul {
   color: #000;
 }
 
+footer {
+  padding: 8px;
+}
+
 body {
   background-color: #ccc;
+}
+
+iframe {
+  border: 0;
 }
 
 @media (max-width: 1500px) {
