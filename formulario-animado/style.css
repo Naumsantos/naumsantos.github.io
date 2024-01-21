@@ -1,0 +1,230 @@
+/* definição de variáveis */
+:root {
+  --primary-color: #5e6363;
+  --secondary-color: white;
+  --text-color: #2b2b2c;
+}
+
+/* zerando alguns padrões */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* tamanho da página */
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background-color: var( --primary-color );
+  font-family: Roboto, Arial, sans-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 32px;
+  letter-spacing: 1px; /* espaço entre as letras */
+  margin: 20px 0; /* posicionando no centro */
+  color: var( --secondary-color );
+}
+
+form {
+  margin: 20px auto; /* posicionando o form no centro */
+  padding: 30px 25px;
+
+  background-color: var( --secondary-color );
+    
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* blocos dos inputs */
+form .input-block {
+  margin-bottom: 20px;
+  position: relative; /* relativo para que o label possa se posicionar de forma absoluta referente ao bloco */
+}
+
+form .input-block input, button {
+
+  /* reset da appearance */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 100%;
+
+  padding: 11px 0; 
+  
+  /* text */
+  font-size: 16px;
+  color: var( --primary-color );
+
+  /* bordas */
+  border: none;
+  border-bottom: 5px solid var( --primary-color );
+  
+  background-color: transparent;
+  
+  outline: none;
+}
+
+/* pegando o elemento irmão */
+input ~ label {
+  /* posicionando o label dentro do input-block */
+  position: absolute;
+  top: 16px;
+  left: 0;
+  
+  color: var( --text-color );
+  
+  transition: .45s; /* para que ele suba de forma suave quando clicar no input */
+}
+
+/* efeitos para quando clicar no input e ele estiver válido */
+input:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-24px); /* o label se movimenta no eixo Y */
+  font-size: 0.8em; /* diminui a fonte quando o label se mover */
+  letter-spacing: 0.1em; /* espaçamento entre as letras */
+}
+
+/* botão */
+form .btn-login {
+  cursor: pointer;
+
+  margin: auto;
+
+  padding: 6px;
+
+  border: none;
+  
+  color: white;
+  background-color: var( --primary-color );
+}
+
+form .btn-login:hover {
+  box-shadow: 0px 0px 4px 3px var( --text-color );
+}
+
+/* APARIÇÃO DO FORM */
+form {
+  overflow: hidden;
+  animation: fade 0.2s;
+}
+
+form .input-block:nth-child(1) {
+  animation: move 500ms;
+}
+
+form .input-block:nth-child(2) {
+  animation: move 400ms;
+  animation-delay: 100ms;
+  animation-fill-mode: backwards;
+}
+
+form .btn-login {
+  animation: move 400ms;
+  animation-delay: 250ms;
+  animation-fill-mode: backwards;
+}
+
+/* animação para os inputs e o button aparecerem na tela */
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateX(-35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* aparição do form */
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* sumir o form depois de clicar o botão */
+.form-hide {
+  animation: down 1.2s forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); /* variação de tempo na hora de sumir */
+}
+
+/* efeito para o formulário descer na página */
+@keyframes down {
+  from {
+    transform: translateY(0);
+  } to {
+    transform: translateY(100vh); 
+  }
+}
+
+/* form no-no */
+form.validate-error {
+  animation: nono 250ms linear, fade paused;
+  animation-iteration-count: 2; /* quantas vezes irá se repetir */
+}
+
+/* efeito de balançar de um lado para o outro no eixo X */
+@keyframes nono {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(-15%);
+  }
+  70% {
+    transform: translateX(15%);
+  }
+}
+
+
+/* quadradinhos que se movem na tela */
+body {
+  overflow: hidden;
+}
+
+.squares li {
+  z-index: -1;
+
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  animation: up 2s infinite alternate;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  } 
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-1000px) rotate(960deg);
+  }
+}
