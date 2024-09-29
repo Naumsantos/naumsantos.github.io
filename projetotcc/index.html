@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Acessibilidade digital para autismo</title>
+  <meta name="description" content="Figma htmlGenerator">
+  <meta name="author" content="Naum Santos Mourão">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 16px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  li {
+    margin: 5px 0;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  #secao01,
+  #secao02,
+  #secao03,
+  #secao04,
+  #secao05 {
+    padding: 64px 112px;
+  }
+
+  #secao01 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 635px;
+
+    padding: 64px 30px;
+
+    background: #FFFFFF;
+  }
+
+  #secao01 .text-01 {
+    width: 531px;
+  }
+
+  #secao01 .title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 74px;
+
+    color: #000000;
+
+    margin-bottom: 24px;
+  }
+
+  #secao01 p {
+    font-weight: 400;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+
+  .button {
+    background: #141414;
+    border-radius: 4px;
+    padding: 16px 24px;
+
+    width: 180px;
+    height: 56px;
+
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 24px;
+    text-align: center;
+
+    text-decoration: none;
+  }
+
+  #secao01 img {
+    width: 429px;
+    height: 489px;
+
+    border-radius: 32px;
+  }
+
+  #secao02 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 40%;
+
+    background: #321472;
+    color: #000;
+
+    overflow-wrap: break-word;
+  }
+
+  #secao02 p,
+  ul {
+    /* font-weight: 400; */
+    /* font-size: 1em; */
+    line-height: 140%;
+  }
+
+  #secao02 p {
+    margin-bottom: 20px;
+  }
+
+  #secao02 ul,
+  #secao03 ol {
+    padding-left: 18px;
+  }
+
+  #secao03 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 45%;
+
+    background: #fff;
+    color: #000;
+  }
+
+  #secao04 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 64px;
+
+    background-color: #DEC12B;
+  }
+
+  #secao05 {
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+
+    background: #FFFFFF;
+  }
+
+  #secao05 form {
+    display: inherit;
+    flex-direction: column;
+  }
+
+  #secao05 form label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  #secao05 form input {
+    margin: 8px 0 24px;
+
+    width: 500px;
+    height: 48px;
+
+    border: 1px solid rgb(172, 166, 166);
+    border-radius: 8px;
+    color: #000;
+
+    padding: 8px 16px;
+  }
+
+  #secao05 form .button {
+    margin: 48px 0 120px;
+  }
+
+  .font {
+    position: absolute;
+  }
+
+  .font,
+  .font a {
+    font-weight: 400;
+    font-size: 12px;
+
+    bottom: 12px;
+
+    text-decoration: none;
+    color: #000;
+  }
+
+  footer {
+    padding: 8px;
+  }
+
+  body {
+    background-color: #ccc;
+  }
+
+  iframe {
+    border: 0;
+  }
+
+  @media (max-width: 1500px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1100px) {
+
+    #secao01 {
+      flex-direction: column;
+      height: 100%;
+    }
+
+    #secao01 img {
+      margin-top: 60px;
+      border-radius: 26px;
+    }
+
+    #secao01 .text-01 {
+      width: 100%;
+      height: 100%;
+    }
+
+    #secao01 .title {
+      line-height: 67px;
+    }
+
+    .subtitle {
+      font-weight: 400;
+      font-size: 46px;
+      margin-bottom: 34px;
+      line-height: 36px;
+    }
+
+    #secao01,
+    #secao02,
+    #secao03,
+    #secao04,
+    #secao05 {
+      padding: 64px 50px;
+    }
+
+    #secao05 form input {
+      width: 318px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    #secao01 img {
+      width: 100%;
+      height: 90%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 256px;
+    }
+  }
+</style>
+
+<body>
+  <main class="container">
+    <section id="secao01">
+      <div class="text-01">
+        <h1 class="title">Aprenda mais sobre autismo</h1>
+        <p>O Transtorno do Espectro do Autismo (TEA) reúne desordens do desenvolvimento neurológico presentes desde o
+          nascimento ou começo da infância.
+        </p>
+        <a title="Botão direciona para o formulário" role="button" class="button" href="#secao05"
+          alt="Botão de quero saber mais">Quero
+          saber mais</a>
+      </div>
+      <div>
+        <img src="./images/image_2.png"
+          alt="Imagem de um menino da pele clara, cabelo liso, loiro, sorrindo, deitado em uma cama, vestido com uma camisa azul, escrita Autismo, e um símbolo composto com quatro quadrados nas cores, vermelha, azul, amarelo e branco, a imagem representa uma criança com autismo, ela foi escolhida porque geralmente o autismo é descoberto na infância e é a etapa mais difícil de lidar">
+      </div>
+    </section>
+    <section id="secao02">
+      <div>
+        <h2 class="subtitle">Características do autismo</h2>
+        <p>
+          O TEA afeta o comportamento do indivíduo, e os primeiros sinais podem ser notados em bebês de poucos meses. No
+          geral, uma criança do espectro autista apresenta os seguintes sintomas:
+        </p>
+        <ul>
+          <li>
+            Dificuldade para interagir socialmente, como manter o contato visual, expressão facial, gestos, expressar as
+            próprias emoções e fazer amigos;
+          </li>
+          <li>
+            Dificuldade na comunicação, optando pelo uso repetitivo da linguagem e bloqueios para começar e manter um
+            diálogo;
+          </li>
+          <li>
+            Alterações comportamentais, como manias, apego excessivo a rotinas, ações repetitivas, interesse intenso em
+            coisas específicas, dificuldade de imaginação e sensibilidade sensorial (hiper ou hipo).
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="secao03">
+      <div>
+        <h2 class="subtitle">Acessibilidade digital para inclusão de pessoas com autismo</h2>
+        <ol>
+          <li>
+            Interfaces simples e previsíveis
+          </li>
+          <li>
+            Represente ums informação em mais de um formato
+          </li>
+          <li>
+            Elimine distrações que possam causar estresse
+          </li>
+          <li>
+            Atenção ao uso de cores saturadas e sons que possam pertubar
+          </li>
+          <li>
+            Evite metáforas e figuras de limguagem na comunicação
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section id="secao04">
+      <h2 class="subtitle">Um pouco mais sobre interfaces para autismo</h2>
+      <iframe role="" width="623" height="336" src="https://www.youtube.com/embed/xQ36uRX51sw"
+        title="Quebrando o ciclo da invisibilidade | Design para o Autismo 2020"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </section>
+    <section id="secao05">
+      <h2 class="subtitle">Para saber mais entre em contato com a gente</h2>
+      <form action="#">
+        <label for="name">Nome completo</label>
+        <input required id="name" type="text" placeholder="Escreva seu nome aqui" title="Escreva seu nome aqui">
+        <label for="email">E-mail</label>
+        <input required aria-invalid="true" id="email" type="email" placeholder="Escreva seu email aqui"
+          title="Escreva seu e-mail aqui">
+        <a title="Borão enviar" class="button" href="#">Enviar</a>
+      </form>
+      <p class="font">Fonte: <a href="https://autismoerealidade.org.br/o-que-e-o-autismo/">Autismo e Realidade</a>
+      </p>
+    </section>
+  </main>
+  <!-- <footer>
+    <p>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+          alt="CSS válido!" />
+      </a>
+    </p>
+  </footer>
+  <script>
+    document.addEventListener('load', function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "https://widget.equally.ai/equally-widget.min.js"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'equallyWidget')); !window.EQUALLY_AI_API_KEY && (window.EQUALLY_AI_API_KEY = "Ze76CeQzJm4Fc1PcdhYT", intervalId = setInterval(function () { window.EquallyAi && (clearInterval(intervalId), window.EquallyAi = new EquallyAi) }, 500));
+  </script> -->
+</body>
+
+</html>
